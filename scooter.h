@@ -17,7 +17,6 @@ typedef struct SCOOT_t{
 } SCOOT;
 
 /*******************************************
- *
  *          scoot_initialize()
  *
  * A function that initializes a scooter

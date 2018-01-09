@@ -10,6 +10,13 @@
 
 #include "msp.h"
 
+/********************************************
+ *          configure_timer()
+ *
+ * Configure Timer A0 to:
+ * - Interrupt every half-second
+ * - Connected to send debug data to terminal
+ ********************************************/
 void configure_timer(void);
 
 

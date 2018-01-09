@@ -20,9 +20,9 @@ void CS_IRQHandler(void)
 
 void PORT1_IRQHandler(void)
 {
-	if(P1IFG & 0x20){	//statement for P1.5
+	if(P1IFG & 0x20){	//statement for P1.5, Connected to scooter beam break
 			P1IFG &= ~0x20;
-			beam_break++;
+			beam_break++; // Increment distance calculation
 			return;
 	}
 	if(P1IFG & 0x02){	//statement for P1.1
@@ -33,7 +33,6 @@ void PORT1_IRQHandler(void)
 			P1IFG &= ~0x10;
 			return;
 	}
-	return;
 }
 
 void ADC14_IRQHandler(void)

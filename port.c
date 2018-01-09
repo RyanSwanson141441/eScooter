@@ -18,7 +18,7 @@ void configure_port(void){
 	P1IES &= ~0x20; //Interrupt on low-high edge for P1.5
 	P1IFG = 0x00; //Clear all P1 interrupt flags
 	P1IE |= 0x32; //Enable interrupt P1.1/P1.4/P1.5
-/* Port configuration to output MCLK to 4.3 */
+/* Port configuration to output MCLK to 4.3; Used for debug purposes */
     P4->DIR |= 0x08;	//P4.3 to output
     P4->OUT &= ~0x08;	//P4.3 to low
     P4->SEL0 |= 0x08;	//P4.3 to primary mode

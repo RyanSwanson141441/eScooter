@@ -9,7 +9,6 @@
 #define ACCELEROMETER_H_
 
 /******************************************************
- *
  *              configure_ADC_accel()
  *
  * Configure the ADC to convert the X-direction of our

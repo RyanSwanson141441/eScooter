@@ -12,11 +12,12 @@
 
 void configure_uart(void);
 
-/***********************************
+/****************************************
  *        UART_send_n()
  *
- * Send data to the transmit buffer
- **********************************/
+ * Send ASCII data to the transmit buffer
+ * to be stored for serial transmit later
+ ***************************************/
 
 void UART_send_n(uint8_t * data, uint32_t length);
 
@@ -30,6 +31,12 @@ void UART_send_n(uint8_t * data, uint32_t length);
 
 void UART_send_byte(uint8_t data);
 
+/***********************************
+ *              ftoa()
+ *
+ * Function used to output a float
+ *     variable to a terminal
+ ***********************************/
 void ftoa(float number);
 
 #endif /* UART_H_ */
